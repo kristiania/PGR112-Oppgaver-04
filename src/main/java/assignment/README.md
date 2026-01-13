@@ -7,8 +7,6 @@
 > For å jobbe med oppgavene, skal du plassere koden din i denne `assignment`-mappen. For å teste koden din, finner du testoppsett
 i mappen `test/java/assignment/TestAssignment.java`. Der kan du velge å kjøre alle tester samtidig eller kjøre dem en og en.
 >
-> Kode testing skal vi se på i en av de neste forelesninger.
-> 
 > 
 > Lykke til!
 
@@ -16,97 +14,119 @@ i mappen `test/java/assignment/TestAssignment.java`. Der kan du velge å kjøre 
 
 ## Oppgave #1
 
-Denne oppgaven finner du i Canvas, hvor oppgaven går ut på å bli kjent med IntelliJ.
+Lag en ny klasse som heter _Program_
+
+- Denne klassen skal kun ha én metode:
+    _runProgram()_ med returtypen _void_
+- Metoden skal printe ut «Programmet starter ...» til terminalen
 
 ---
 
 ## Oppgave #2
 
-I denne oppgaven skal du lage en klasse som heter _MyFirstBook_.
-
-- Lag en klasse med navnet _MyFirstBook_ som i første utgangspunkt skal ha 3 felter:
-    - _title_
-    - _author_
-    - _numberOfPages_
-
-- Velg en datatype som kan passe for hver av disse feltene
+Lag en ny klasse som heter _Computer_
+- Denne klassen skal kun ha én statisk main-metode:
+- Her skal følgende skje:
+- Et objekt av typen _Program_ opprettes
+- Via objektet som ble opprettet, kall på _runProgram()_-metoden
 
 ---
 
 ## Oppgave #3
 
-- Lag en konstruktør inne i _MyFirstBook_-klassen med følgende parametere:
-    - _title_, _author_ og _numberOfPages_
+Lag en ny klasse som heter _Terminal_ med tilhørende konstruktør som initialiserer
+  feltet spesifisert i del-oppgaven nedenfor.
 
-- Konstruktøren skal sette disse verdiene som den mottar og lagre disse i feltene vi opprettet i oppgave #2
+### Oppgave #3.1
 
+Denne klassen skal ha følgende felt:
+- _ArrayList < String > options_
+
+### Oppgave #3.2
+
+Denne klassen skal ha følgende metoder:
+- _void addOption(String value)_
+- Legg til verdien i ArrayList-en
+
+### Oppgave #3.3
+
+- _void clearOptions()_
+- Fjerner alle verdier fra ArrayList-en.
+
+### Oppgave #3.4
+
+- _void displayMenu()_
+- Loop igjennom alle valgene (options) og vis disse i en
+nummerert liste i terminalen ved hjelp av en _for_-loop
+og _IO.println_
 
 ---
 
 ## Oppgave #4
-- Lag en metode _printInfo_ inn i _MyFirstBook_-klassen som
-  skriver ut (via _System.out.printf_ eller _IO.print_ om du foretrekker) tilstanden til objektet –
-  altså printer ut verdiene i feltene i en linje
-  "Tittel: _title_, Forfatter: _author_, Antall sider: _numberOfPages_"
-  til terminalen: Vær nøyaktig med formattering for ellers feiler testene senere.
+Lag en ny klasse som heter _Word_
+- Konstruktøren til denne klasse skal ta imot en String-verdi som er hva ordet faktisk
+  er, og lagres i _data_-feltet spesifisert i del-oppgaven under
 
+### Oppgave #4.1
 
+Denne klassen skal ha følgende _private_-felter:
+- _String data_ som inneholder verdien for det faktisk ordet.
+- _ArrayList < String > synonyms_ som inneholder liste med synonymer tilknyttet ordet.
+
+### Oppgave #4.2
+Denne klassen skal ha følgende _public_-metoder:
+-  _String getWord()_
+- _ArrayList < String > getSynonyms()_
+- _void addSynonym(String word)_
 ---
 
 ## Oppgave #5
-- Opprett en ny (kompakt)klasse som heter _JavaProgram_
-    - Inne i denne klassen, opprett en main-metode som gjør følgende:
-        - Oppretter én instans av av klassen _MyFirstBook_ ved bruk av new-nøkkelordet
-        - Via denne instansen (objekt av type _MyFirstBook_), kall på metoden du lagde i oppgave #4
+Endre _runProgram()_-metoden i Program-klassen slik at denne metoden gjør
+følgende:
+- Oppretter en variabel av type _ArrayList < Word >_ som heter «words»
+- Legg til flere objekter av type Word inn i denne ArrayList-en.
+Her må du lage dine egne instanser, som vil si at du må lage flere objekter av
+type _Word_-klassen ved hjelp av _new_-nøkkelordet.
 
+- Lag en loop som går igjennom alle _Word_-objektene i ArrayList-en som
+inneholder _Word_-objekter, og print ut følgende:
+   -  Ordet 
+   - Tilhørende synonymer 
+     - Denne kan være litt knotete å få til, da en fort kan ende opp
+med en loop inne i en loop
+     - Bruk gjerne følgende kodesnutt for å gå igjennom hvert ord
+lagret i listen:
+     - ```
+       for (Word word : words) {
+       // variabelen «word» vil være hvert enkelt ord
+       }
+       ```
 ---
 
-### Oppgave #6
-- Opprett en ny klasse som heter _Book_ og som er i utgangspunkt en kopi av 
-klasse _MyFirstBook_ med samme felt, konstruktør og metode som du har lagret i oggavene #2 til #4.
-- Denne kommer vi til å ta i bruk senere i emnet
-- Inne i _Book_-klassen, lag gettere og settere for alle feltene.
-- Sørg for at alle feltene i _Book_-klassen er private.
-
+### Ekstra-Oppgave #1
+- Istedenfor en _ArrayList < String >_ for å holde styr på alle synonymer tilknyttet et ord,
+  gjør denne om til å være følgende istedenfor:
+  - _ArrayList < Word >_
+    - Gjør nødvendige endringer andre steder i koden din slik at _alt_ som har med
+    synonymer å gjøre, istedenfor at datatypen _String_ brukes, så skal _Word_ brukes.
+    Tilpass _runProgram()_-metoden i _Program_-klassen slik at synonymer opprettes og
+    legges til ordene disse er synonymer for.
 ---
 
-## Oppgave #7
 
-- Her skal du gjøre noe nytt: Husker du hvordan du opprettet en ny klasse via «New»-
-  menyen?
-    - Her skal du lage en ny klasse som heter _Genre_, men, istedenfor å velge «Class» i listen under hvor du skriver inn navnet på klassen, velg «Enum» istedenfor.
-        - I filen som opprettes, i kodeblokken til klassen, mellom `{` og `}`, her skriver du en komma-separert liste med følgende verdier:
-            - CRIME, ACTION, FANTASY, CLASSIC, OTHER
-            - Og eventuelt andre sjangere for bøker du kan komme på.
+## Informasjon
 
----
+Bruk følgende link:
+https://www.w3schools.com/java/java_arraylist.asp
+for å utforske mer av ArrayList
 
-## Oppgave #8
+Disse oppgavene krever gjerne litt kartlegging av hva som er mulig med _ArrayList_, hvor det
+kan være greit å stille seg selv spørsmålene:
+- Hvordan legge noe til i listen?
+- Hvordan fjerne én spesifik verdi fra listen?
+- Hvordan fjerne alt fra listen?
+- Og så videre ...
 
-- Lag et nytt felt i _Book_-klassen med navnet _genre_ som er av type _Genre_.
-- Lag getter og setter for dette nylige opprettede feltet.
-
----
-
-## Oppgave #9
-
-- Legg til en til konstruktøre til _Book_-klassen med _genre_ som et av parametrene
-og gjør nødvendige endringer.
-- Det er svært viktig at du beholde din første konstruktør for at testing av tidligerer oppgaver ikke feiler. 
-
----
-
-## Mengdetrening
-
-- Finn deg et annet konsept enn en «Book» - dette kan være alt fra en bil, sykkel, vannflaske, fjernsyn, lyspære, lommebok osv. – prøv gjerne å finn noe du interesserer deg for eller kan mye om, og som ikke er veldig komplisert
-
-- I en ny mappe, f.e. `assignment/ekstra/`, gjør de samme oppgaver over tilpasset til din klasse – her må du finne felter som er relevant og riktige datatyper til dem, og et par metoder som gir mening å ha.
-
-
----
-
-## Annen informasjon
-
-Det oppfordres til å kode på engelsk, og kommentarer på norsk eller engelsk.
-
-Med disse oppgavene (+ mengdetreningen) er det meningen å bruke tid på, og det forventes at du er helt ferdig med alle disse oppgavene til forelesning 07 starter.
+Bruk kodeeksempler og forsøk deg litt fram. Bruk terminalen for å gi deg selv
+  tilbakemeldinger underveis (f.eks. ved å printe ut linjer du bestemmer selv ut til terminalen),
+  slik at du forstår mer av hva du forsøker å gjøre underveis.
