@@ -27,7 +27,7 @@ public class TestAssignment extends BaseAssignment
     @DisplayName("Assignment Oppgave #1")
     @Order(1)
     @Test()
-    public void oppgave1() {
+    public void oppgave01() {
         // Code that tests the assignment goes here
         testClass("assignment.Program", () -> {
 
@@ -43,7 +43,7 @@ public class TestAssignment extends BaseAssignment
     @DisplayName("Assignment Oppgave #2")
     @Order(1)
     @Test()
-    public void oppgave2() {
+    public void oppgave02() {
          Computer.main();
         var progInfo = "Programmet starter ...";
          assertStandardOutputEquals(progInfo, progInfo.length());
@@ -53,7 +53,7 @@ public class TestAssignment extends BaseAssignment
     @DisplayName("Assignment Oppgave #3.2 til 3.4")
     @Order(1)
     @Test()
-    public void oppgave3() {
+    public void oppgave03() {
 
         Terminal ter = new Terminal();
         ArrayList<String> options = new ArrayList<>();
