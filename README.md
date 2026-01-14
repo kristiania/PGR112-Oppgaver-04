@@ -1,22 +1,26 @@
 # Vellkommen til oppgavene i PGR112 Vår 26
 
 
-## Info
+## Info (todo norsk)
 
-> For å starte med oppgavene kan du enten kopiere eller klone repositorien slik som du ser på bilde...
-> <img width="1059" height="555" alt="Screenshot 2026-01-04 at 16 19 09" src="https://github.com/user-attachments/assets/3d3b4c11-fcc2-4db9-aeda-b9b212cf72d3" />
+> To work on the assignments, you should clone this repository...
+> <img width="1035" height="555" alt="image" src="https://github.com/user-attachments/assets/353b4038-42c1-4e7b-bb07-96c216ebadf0" />
 
-> For å jobbe med oppgavene, skal du plassere alt koden din i  `src/main/java/assignment`-mappen. For å teste koden din, finner du testoppsett
-i mappen `src/test/java/assignment/TestAssignment.java`. Der kan du velge å kjøre alle tester samtidig eller kjøre dem en og en.
+> ..then choose "new" and "project from version controll" in IntelliJ..
+>  <img width="898" height="178" alt="image" src="https://github.com/user-attachments/assets/efb9e1c7-1552-4744-b208-f89adf893c21" />
+
+>.. then copy it to "URL" and choose your preferred "Directory" and press "clone".
+> <img width="778" height="614" alt="image" src="https://github.com/user-attachments/assets/4360a359-8344-4d3c-9652-5c0a64c35f43" />
+
+>  you find the exercises in the `src/main/java/assignment` folder. To test your code, you will find the test setup
+in the `src/test/java/assignment/TestAssignment.java` folder. There you can choose to run all tests at once or run them one by one.
 >
 >
-> Lykke til!
+> Good luck!
 
 ---
 
-## Teknologi
-
-TODO: instruksjon på junit6
+## Technology
 
 > Java 25
 
@@ -24,22 +28,15 @@ TODO: instruksjon på junit6
 
 > Meant to be used within IntelliJ IDEA, recommended version: 2025.3
 
-
 ---
 
 ## Preparations
 
-### Step 1
-
 - Download JetBrains Toolbox
 - Download or update IntelliJ to Community Edition 2025 eller 2025EAP
-
-### Step 2
-
-Create a new project in IntelliJ with the following information:
-- Build system: IntelliJ
-- JDK: opendJDK-25
-- Download if needed
-- No sample code
+- Create your own github account: https://github.com/
+- Connect IntelliJ with your github account: https://www.jetbrains.com/help/idea/set-up-a-github-account.html
+- More on cloning in IntelliJ: https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub
+- More on version kontrol https://www.jetbrains.com/help/idea/version-control-integration.html
 
 
