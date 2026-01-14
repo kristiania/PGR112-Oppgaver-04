@@ -135,4 +135,12 @@ public class TestAssignment extends BaseAssignment
 
     }
 
+    @DisplayName("Assignment Oppgave #5")
+    @Order(1)
+    @Test()
+    public void oppgave05() {
+        //omit for now
+
+    }
+
 }

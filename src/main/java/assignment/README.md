@@ -102,7 +102,7 @@ lagret i listen:
        ```
 ---
 
-### Ekstra-Oppgave #1
+### Ekstra-Oppgave #1 lagres i katalog 'extra'
 - Istedenfor en _ArrayList < String >_ for å holde styr på alle synonymer tilknyttet et ord,
   gjør denne om til å være følgende istedenfor:
   - _ArrayList < Word >_
