@@ -1,7 +1,5 @@
 package assignment;
 
-import solution.Word;
-
 import java.util.ArrayList;
 
 public class Program
