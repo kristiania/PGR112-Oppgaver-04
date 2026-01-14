@@ -47,53 +47,8 @@ public class TestAssignment extends BaseAssignment
          Computer.main();
         var progInfo = "Programmet starter ...";
          assertStandardOutputEquals(progInfo, progInfo.length());
-        // hvordan å teste main i compact class
-        //testClass("assignment.Computer", () -> {
-        //    assertTrue(methodExists("main"));
-        //});
     }
-    /*
-    @DisplayName("Assignment Oppgave #3")
-    @Order(1)
-    @Test()
-    public void oppgave3() {
-        // Code that tests the assignment goes here
-        // TODO: hvordan å teste private field
-        testClass("assignment.Terminal", () -> {
-                provideHintIfAssertionFails(
-                       "Finner ikke alle feltene. Har du skrevet og deklarert dem riktig?"
-                        ,
-                        () -> {
-                            assertTrue(fieldExists("options"));
-                        }
-                );
 
-        });
-        testClass("assignment.Terminal", () -> {
-            provideHintIfAssertionFails(
-                    "Finner ikke alle metodene. Har du skrevet og deklarert dem riktig?"
-                    ,
-                    () -> {
-                        //Todo: same goes for default testing
-                        assertTrue(methodExists("clearOptions"));
-                        assertTrue(methodExists("displayMenu"));
-                        assertTrue(methodExists("addOption", String.class));
-                    }
-            );
-
-        });
-
-        testClass("assignment.Terminal", () -> {
-
-
-            var terminal = classCreateInstance();
-
-            classInstanceInvokeMethod(terminal, "displayMenu");
-            //var progInfo = "Programmet starter ...";
-            //assertStandardOutputEquals(progInfo);
-        });
-
-    } */
 
     @DisplayName("Assignment Oppgave #3.2 til 3.4")
     @Order(1)
