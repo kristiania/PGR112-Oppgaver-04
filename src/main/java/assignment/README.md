@@ -1,4 +1,4 @@
-# Oppgavesett 03
+# Oppgavesett 04
 
 ---
 
@@ -24,7 +24,7 @@ Lag en ny klasse som heter _Program_
 
 ## Oppgave #2
 
-Lag en ny klasse som heter _Computer_
+Lag en ny kompaktklasse som heter _Computer_
 - Denne klassen skal kun ha én statisk main-metode:
 - Her skal følgende skje:
 - Et objekt av typen _Program_ opprettes
@@ -45,20 +45,19 @@ Denne klassen skal ha følgende felt:
 ### Oppgave #3.2
 
 Denne klassen skal ha følgende metoder:
-- _void addOption(String value)_
+- _public void addOption(String value)_
 - Legg til verdien i ArrayList-en
 
 ### Oppgave #3.3
 
-- _void clearOptions()_
+- _public void clearOptions()_
 - Fjerner alle verdier fra ArrayList-en.
 
 ### Oppgave #3.4
 
-- _void displayMenu()_
-- Loop igjennom alle valgene (options) og vis disse i en
-nummerert liste i terminalen ved hjelp av en _for_-loop
-og _IO.println_
+- denne klassen skal ha getter og setter metodene:
+- _public ArrayList < String >  getOptions()_ 
+- _public void setOptions(ArrayList < String > options)_
 
 ---
 

@@ -831,6 +831,12 @@ public class Utilities
         assertEquals("\"%s\"".formatted(input), "\"%s\"".formatted(Utilities.getStandardOutput()));
     }
 
+    static public void assertStandardOutputEquals(String input, int n) {
+        String shortInput = "\"%s\"".formatted(input).substring(0, Math.min("\"%s\"".formatted(input).length(), n));
+        String shortSout = "\"%s\"".formatted(Utilities.getStandardOutput()).substring(0, Math.min("\"%s\"".formatted(Utilities.getStandardOutput()).length(), n));
+        assertEquals(shortInput, shortSout);
+    }
+
 
     // TODO: improve later, goal is to preserve indentation when removing leading whitespace from multiline string given
     // TODO: handle when first line does not set the proper (intended) indentation level
