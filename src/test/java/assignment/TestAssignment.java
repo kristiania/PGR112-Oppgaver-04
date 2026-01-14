@@ -114,7 +114,7 @@ public class TestAssignment extends BaseAssignment
         assertArrayEquals(testList.toArray(), ter.getOptions().toArray());
 
         ter.clearOptions();
-        testList = new ArrayList<>();  
+        testList = new ArrayList<>();
         assertArrayEquals(testList.toArray(), ter.getOptions().toArray());
 
 
