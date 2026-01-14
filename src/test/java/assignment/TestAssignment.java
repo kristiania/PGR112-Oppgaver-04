@@ -123,7 +123,7 @@ public class TestAssignment extends BaseAssignment
     @DisplayName("Assignment Oppgave #4.2-")
     @Order(1)
     @Test()
-    public void oppgave042() {
+    public void oppgave04() {
            String myWord = "nerd";
            Word word = new Word(myWord);
            assertEquals(myWord, word.getWord());
