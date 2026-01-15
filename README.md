@@ -1,7 +1,7 @@
 # Vellkommen til oppgavene i PGR112 Vår 26
 
 
-## Info (todo norsk)
+## Info 
 
 > To work on the assignments, you should clone this repository...
 > <img width="1035" height="555" alt="image" src="https://github.com/user-attachments/assets/353b4038-42c1-4e7b-bb07-96c216ebadf0" />
